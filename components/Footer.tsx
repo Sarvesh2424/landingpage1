@@ -12,7 +12,7 @@ function Footer() {
                 <Image
                   src="/IconWhite.svg"
                   width={32}
-                  height={32}
+                  height={40}
                   alt="PeopleOS logo"
                   className="h-auto w-auto"
                 />

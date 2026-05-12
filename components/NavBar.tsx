@@ -5,10 +5,10 @@ import { useState } from "react";
 function Navbar() {
   const [open, setOpen] = useState(false);
   return (
-    <nav className="fixed top-8 w-2/3 left-1/2 transform -translate-x-1/2 rounded-xl z-50 bg-white/90 backdrop-blur border-b shadow-lg border-gray-100">
+    <nav className="fixed top-8 px-4 w-2/3 left-1/2 transform -translate-x-1/2 rounded-xl z-50 bg-white/90 backdrop-blur border-b shadow-lg border-gray-100">
       <div className="max-w-6xl mx-auto  py-8 flex items-center justify-between h-14">
         <div className="flex items-center gap-2">
-          <Image src="/Icon.svg" width={32} height={32} alt="PeopleOS logo" className="h-auto w-auto"/>
+          <Image src="/Icon.svg" width={32} height={40} alt="PeopleOS logo" className="h-auto w-auto"/>
 
           <span className="font-bold text-xl text-gray-900 tracking-tight">
             PeopleOS
