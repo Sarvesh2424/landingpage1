@@ -11,12 +11,25 @@ function RealTime() {
             Experience in Real Time
           </h2>
         </div>
-        <div className="bg-white shadow-lg rounded-4xl mt-16 w-full h-150"></div>
+        <div className="relative">
+          <Image
+            src="/VideoFrame.svg"
+            alt="Video frame"
+            width={1188}
+            height={830}
+            className="w-auto h-auto relative"
+          />
+          <div className="absolute top-0 w-full p-12 ">
+            <div className="bg-white shadow-lg border border-[#D9D9D9] rounded-4xl w-full h-170"></div>
+          </div>
+          
+        </div>
+
         <div className="px-6 pb-6 flex items-center mt-12 justify-center flex-row gap-3">
-          <button className="bg-black text-white text-lg px-16 py-2.5 rounded-2xl shadow-lg font-medium">
+          <button className="bg-black text-white text-lg px-16 py-2.5 rounded-2xl shadow-lg font-semibold">
             Video
           </button>
-          <button className=" text-black text-lg px-5 py-2.5 rounded-xl font-medium">
+          <button className=" text-black text-lg px-5 py-2.5 rounded-xl">
             Try a demo
           </button>
         </div>

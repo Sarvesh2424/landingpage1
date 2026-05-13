@@ -62,15 +62,15 @@ function Pricing() {
             ({ name, price, per, desc, features, cta, highlighted }) => (
               <div
                 key={name}
-                className={`rounded-2xl relative p-6 flex flex-col ${highlighted ? "bg-linear-to-bl from-blue-200 to-orange-200 text-white shadow-blue-200 shadow-xl " : "border-gray-100 bg-indigo-100/50 shadow-sm"}`}
+                className={` relative p-6 flex flex-col ${highlighted ? "bg-linear-to-bl rounded-2xl from-[#B3D1FF] to-[#FFDEC1] text-white shadow-blue-200 shadow-xl " : "border-gray-100 rounded-md bg-[#F4F4F4] shadow-sm"}`}
               >
                 {highlighted && (
-                  <div className="inline-block absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-white text-black border border-black shadow-lg  font-bold px-3 py-0.5 rounded-full mb-3 self-start">
+                  <div className="inline-block absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 py-2 bg-white text-black border border-black shadow-lg  font-bold px-4 rounded-full mb-3 self-start">
                     Most Popular
                   </div>
                 )}
                 <p
-                  className={` font-semibold text-lg mb-1 text-black`}
+                  className={` font-semibold mt-2 text-lg mb-1 text-black`}
                 >
                   {name}
                 </p>
@@ -89,7 +89,7 @@ function Pricing() {
                   )}
                 </div>
                 <button
-                  className={`w-full py-2.5 mt-4 rounded-sm text-sm font-semibold ${highlighted ? "bg-white text-blue-600" : "border border-blue-600 text-blue-600"}`}
+                  className={`w-full py-2.5 mt-4 rounded-sm text-sm font-medium ${highlighted ? "bg-white text-[#1D4ED8]" : "border border-[#1D4ED8] text-[#1D4ED8]"}`}
                 >
                   {cta}
                 </button>
@@ -97,9 +97,9 @@ function Pricing() {
                   {features.map((f) => (
                     <li
                       key={f}
-                      className={`flex items-center gap-2  ${highlighted ? "text-neutral-600" : "text-neutral-600"}`}
+                      className={`flex items-center gap-3  ${highlighted ? "text-neutral-600" : "text-neutral-600"}`}
                     >
-                        <div className="rounded-full p-1 text-blue-500 bg-blue-50"><Check/></div>
+                        <div className="rounded-full p-2 text-[#173EAD]   bg-[#E8EDFB]"><Check className="h-4 w-4"/></div>
                       {f}
                     </li>
                   ))}

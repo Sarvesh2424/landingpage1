@@ -1,4 +1,4 @@
-import { StarIcon } from "lucide-react";
+import { ChevronLeft, ChevronRight, StarIcon } from "lucide-react";
 import Image from "next/image";
 
 function Testimonials() {
@@ -23,18 +23,23 @@ function Testimonials() {
     },
   ];
   return (
-    <section className="py-16 relative bg-[#0d1117] text-white">
+    <section className="py-16 relative bg-[#15141B] text-white">
       <div
-        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-150 h-100 
-              bg-[radial-gradient(ellipse_at_center,#1e3a5f_0%,transparent_70%)] 
-              opacity-60 blur-2xl pointer-events-none"
+        className="absolute top-4 left-2/3 -translate-x-2/3 w-150 h-100 
+              bg-[radial-gradient(ellipse_at_center,#1e3a5f_0%,transparent_100%)] 
+              opacity-30 blur-2xl pointer-events-none"
       ></div>
+      <div 
+    className="absolute bottom-0 left-30 w-100 h-100 
+               bg-[radial-gradient(ellipse_at_center,#1e3a5f_0%,transparent_100%)] 
+               opacity-30 blur-2xl"
+  />
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mt-10 mb-10">
-          <h2 className="text-2xl md:text-5xl font-semibold text-slate-300 mb-4">
+          <h2 className="text-2xl md:text-5xl font-semibold text-[#C2C4C8] mb-4">
             Don't take our word for it.
           </h2>
-          <p className="text-slate-300 text-5xl font-semibold">
+          <p className="text-[#C2C4C8] text-5xl font-semibold">
             Over 100+ people trust us.
           </p>
         </div>
@@ -42,9 +47,9 @@ function Testimonials() {
           {testimonials.map(({ name, role, text, stars }) => (
             <div
               key={name}
-              className={`bg-gray-800 backdrop-blur-2xl border border-gray-700 rounded-xl p-5 ${name === "James L." && "scale-120"}`}
+              className={`bg-linear-to-l from-[#21323A] to-[#181F23] backdrop-blur-2xl border  border-gray-700 rounded-lg p-5 ${name === "James L." && "scale-120"}`}
             >
-              <p className="text-white font-semibold mb-4 leading-relaxed">
+              <p className="text-white text-sm font-semibold mb-4 leading-relaxed">
                 "{text}"
               </p>
               <div className="flex items-center justify-between gap-2">
@@ -59,16 +64,16 @@ function Testimonials() {
                     />
                   </div>
                   <div>
-                    <p className="text-lg text-neutral-400 font-semibold">
+                    <p className="text-lg text-[#C2C4C8] font-semibold">
                       {name}
                     </p>
-                    <p className="text-[10px] text-gray-500">{role}</p>
+                    <p className="text-[10px] text-[#C2C4C8">{role}</p>
                   </div>
                 </div>
 
-                <div className="flex gap-0.5 mb-3 bg-neutral-500 p-1 rounded-full border border-gray-50">
+                <div className="flex gap-0.5 mb-3 px-1 bg-[#49565D] p-1 rounded-full">
                   {Array.from({ length: stars }).map((_, i) => (
-                    <StarIcon fill="yellow" key={i} className="h-3 w-3" />
+                    <StarIcon fill="#FFC250" strokeWidth={1} key={i} className="h-3 w-3" />
                   ))}
                 </div>
               </div>
@@ -76,12 +81,11 @@ function Testimonials() {
           ))}
         </div>
         <div className="flex gap-4 mt-12 w-2/3 justify-end">
-          <button className=" p-2 rounded-full w-10 h-10 border border-green-400 text-green-400">
-            {"<"}
+          <button className=" p-2 rounded-full w-10 h-10 border border-[#A4EFFB] text-[#A4EFFB]">
+            <ChevronLeft />
           </button>
-          <button className=" p-2 rounded-full border w-10 h-10 border-green-400 text-green-400">
-            {" "}
-            {">"}{" "}
+          <button className=" p-2 rounded-full border w-10 h-10 border-[#A4EFFB] text-[#A4EFFB]">
+            <ChevronRight />
           </button>
         </div>
       </div>
