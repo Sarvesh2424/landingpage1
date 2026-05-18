@@ -25,7 +25,7 @@ function Testimonials() {
   return (
     <section className="py-16 relative bg-[#15141B] text-white">
       <div
-        className="absolute top-4 left-2/3 -translate-x-2/3 w-150 h-100 
+        className="absolute top-4 left-2/3 -translate-x-2/3 w-auto md:w-150 h-100 
               bg-[radial-gradient(ellipse_at_center,#1e3a5f_0%,transparent_100%)] 
               opacity-30 blur-2xl pointer-events-none"
       ></div>
@@ -47,14 +47,14 @@ function Testimonials() {
           {testimonials.map(({ name, role, text, stars }) => (
             <div
               key={name}
-              className={`bg-linear-to-l from-[#21323A] to-[#181F23] backdrop-blur-2xl border  border-gray-700 rounded-lg p-5 ${name === "James L." && "scale-120"}`}
+              className={`bg-linear-to-l from-[#21323A] max-w-screen  to-[#181F23] backdrop-blur-2xl border  border-gray-700 rounded-lg p-5 ${name === "James L." && "md:scale-120"}`}
             >
               <p className="text-white text-sm font-semibold mb-4 leading-relaxed">
                 "{text}"
               </p>
               <div className="flex items-center justify-between gap-2">
                 <div className="flex gap-2 items-center">
-                  <div className="w-8 h-8 rounded-full bg-indigo-700 flex items-center justify-center text-xs font-bold">
+                  <div className="w-auto h-auto rounded-full bg-indigo-700 flex items-center justify-center text-xs font-bold">
                     <Image
                       src="/UserIcon.svg"
                       width={16}

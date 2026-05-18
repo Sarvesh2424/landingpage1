@@ -3,11 +3,11 @@ import Image from "next/image";
 
 function AIFeatures() {
   return (
-    <section className="py-20 bg-[#F4F4F4]">
-      <div className=" flex justify-between items-center">
-        <div className="flex  flex-col w-full items-center">
-          <div className="w-1/2"></div>
-          <div className="w-1/2 flex flex-col">
+    <section className="py-20 w-screen  bg-[#F4F4F4] overflow-x-hidden">
+      <div className=" flex flex-col lg:flex-row justify-between items-center">
+        <div className="flex flex-col px-2 w-full items-center">
+          <div className="lg:w-1/2"></div>
+          <div className="lg:w-1/2 flex flex-col">
             <h2 className="text-4xl  font-semibold text-gray-900 mb-4 leading-tight">
               AI that supports
               <br />
@@ -44,15 +44,25 @@ function AIFeatures() {
           width={100}
           height={10}
           alt="Feature 1"
-          className="w-auto h-auto"
+          className="w-auto md:hidden h-auto"
           loading="eager"
         />
+        <div className="hidden mt-4 md:flex justify-end w-screen">
+          <Image
+            src="/AIFeat1.svg"
+            width={100}
+            height={10}
+            alt="Feature 1"
+            className="w-auto   h-auto"
+            loading="eager"
+          />
+        </div>
       </div>
       <div className=" h-30"></div>
-      <div className=" flex justify-between items-center">
+      <div className=" flex flex-col lg:flex-row justify-between items-center">
         <div className="flex  flex-col w-full items-center">
-          <div className="w-1/2"></div>
-          <div className="w-1/2 flex flex-col">
+          <div className="lg:w-1/2"></div>
+          <div className="lg:w-1/2 flex flex-col">
             <h2 className="text-4xl  font-semibold text-gray-900 mb-4 leading-tight">
               Designed to improve
               <br />
@@ -89,9 +99,19 @@ function AIFeatures() {
           width={100}
           height={10}
           alt="Feature 1"
-          className="w-auto h-auto"
+          className="w-auto mt-4 md:hidden h-auto"
           loading="eager"
         />
+        <div className="hidden mt-4 md:flex justify-end w-screen">
+          <Image
+            src="/AIFeat2.svg"
+            width={100}
+            height={10}
+            alt="Feature 1"
+            className="w-auto   h-auto"
+            loading="eager"
+          />
+        </div>
       </div>
     </section>
   );

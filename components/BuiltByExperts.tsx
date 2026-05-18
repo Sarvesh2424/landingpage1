@@ -4,8 +4,8 @@ import Image from "next/image";
 function BuiltByExperts() {
   return (
     <>
-      <section className="py-12 z-10 pb-120 bg-linear-to-r from-gray-50 to-gray-100 border-b border-gray-100">
-        <div className="max-w-303.25 mx-auto ">
+      <section className="py-12 z-10  pb-75 md:pb-120 bg-linear-to-r from-gray-50 to-gray-100 border-b border-gray-100">
+        <div className="max-w-303.25 mx-auto px-2 md:px-0">
           <p className="text-start text-4xl mt-10  mb-2 font-medium">
             Built by Experts in Scalable Digital Products
           </p>
@@ -18,7 +18,7 @@ function BuiltByExperts() {
           </p>
         </div>
       </section>
-      <div className="relative z-20 -mt-10 md:-mt-100">
+      <div className="relative z-20  md:-mt-100">
         <Image
           src="/Dashboard.svg"
           alt="Dashboard"
@@ -30,8 +30,8 @@ function BuiltByExperts() {
       </div>
 
       <section className="z-10 pt-120 -mt-100 pb-20 bg-linear-to-br from-[#FFDEC1]  to-[#B3D1FF] relative overflow-hidden">
-        <div className="absolute -top-16 -right-24 w-96 h-96 rounded-full bg-indigo-100 opacity-50 blur-3xl pointer-events-none" />
-        <div className="absolute top-40 -left-20 w-72 h-72 rounded-full bg-purple-100 opacity-40 blur-3xl pointer-events-none" />
+        {/* <div className="absolute hidden -top-16 -right-24 w-96 h-96 rounded-full bg-indigo-100 opacity-50 blur-3xl pointer-events-none" /> */}
+        {/* <div className="absolute top-40 -left-20 w-72 h-72 rounded-full bg-purple-100 opacity-40 blur-3xl pointer-events-none" /> */}
 
         <div className="max-w-6xl mx-auto px-4 mt-10 text-center relative">
           <div className="text-4xl md:text-3xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-4  mx-auto">
@@ -48,7 +48,7 @@ function BuiltByExperts() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center mb-12">
             <a
               href="#"
-              className="flex items-center justify-center border  z-30 border-gray-200 px-6 rounded-lg  font-medium text-white bg-black"
+              className="flex items-center justify-center border py-2 md:py-0 z-30 border-gray-200 px-6 rounded-lg  font-medium text-white bg-black"
             >
               Sign up for free
             </a>

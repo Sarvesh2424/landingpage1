@@ -11,14 +11,14 @@ function FeaturesList() {
     "Performance Management",
   ];
   return (
-    <section className="py-16 bg-linear-to-bl from-[#FFDEC1] to-[#B3D1FF]">
+    <section className="py-16 max-w-screen  bg-linear-to-bl from-[#FFDEC1] to-[#B3D1FF]">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-12 items-start">
           <div className="w-full">
             <h2 className="text-2xl mt-8 md:text-3xl font-bold text-gray-900 mb-6 leading-tight">
               Everything you need to manage your workforce
             </h2>
-            <div className="flex w-full mt-16 justify-between">
+            <div className="flex flex-col md:flex-row w-full mt-16 justify-between">
               <ul className="space-y-3">
                 {features.map((f, i) => (
                   <li
@@ -33,13 +33,13 @@ function FeaturesList() {
                   </li>
                 ))}
               </ul>
-              <div className="w-1/2">
+              <div className="md:w-1/2">
                 <Image
                   src="/FeatureCard.svg"
                   width={100}
                   height={10}
                   alt="Feature preview"
-                  className="w-full h-auto rounded-lg shadow-lg"
+                  className="w-full mt-4 md:mt-0 h-auto rounded-lg shadow-lg"
                 />
               </div>
             </div>

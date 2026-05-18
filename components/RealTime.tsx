@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function RealTime() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50 max-w-screen ">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl mt-8 text-start font-bold text-gray-900 leading-tight">
@@ -20,7 +20,7 @@ function RealTime() {
             className="w-auto h-auto relative"
           />
           <div className="absolute top-0 w-full p-12 ">
-            <div className="bg-white shadow-lg border border-[#D9D9D9] rounded-4xl w-full h-170"></div>
+            <div className="bg-white shadow-lg border border-[#D9D9D9] rounded-4xl w-full h-40 md:h-110 lg:h-170"></div>
           </div>
           
         </div>

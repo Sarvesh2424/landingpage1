@@ -10,15 +10,15 @@ function WhyChoose() {
     "Real-time analytics and insights",
   ];
   return (
-    <section className="py-16 bg-linear-to-bl from-blue-300 to-orange-200">
+    <section className="py-16  bg-linear-to-bl max-w-full  from-blue-300 to-orange-200 overflow-x-hidden">
       <div className=" mx-auto gap-12 items-center">
         <div className="w-full justify-between">
-          <div className="w-2/3 ml-10 flex justify-center">
+          <div className="md:w-2/3 ml-10 flex justify-center">
             <div className="flex flex-col"></div>
           </div>
 
-          <div className="flex justify-between w-full">
-            <div className="flex justify-center w-full">
+          <div className="flex flex-col lg:flex-row justify-between w-full">
+            <div className="flex px-4 justify-center w-full">
               <div>
                 <h2 className="text-2xl  md:text-4xl font-semibold text-gray-900 mb-3 leading-tight">
                   Why choose our HR platform

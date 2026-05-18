@@ -36,7 +36,7 @@ function CompleteSystem() {
     },
   ];
   return (
-    <section className="py-16 bg-black text-white">
+    <section className="py-16 max-w-screen  bg-black text-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-10">
           <h2 className="text-2xl mt-12 text-[#FBD7FF] md:text-4xl font-bold mb-2">

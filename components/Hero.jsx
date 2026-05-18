@@ -4,10 +4,10 @@ import Image from "next/image";
 function Hero() {
   return (
     <>
-      <section className="pt-28 z-10 pb-100 bg-linear-to-br from-[#B3D1FF]  to-[#FFDEC1]  relative overflow-hidden">
+      <section className="pt-28 z-10 md:pb-100 pb-50 bg-linear-to-br from-[#B3D1FF] max-w-screen to-[#FFDEC1]  relative overflow-hidden">
         {/* Soft blobs */}
-        <div className="absolute -top-16 -right-24 w-96 h-96 rounded-full bg-indigo-100 opacity-50 blur-3xl pointer-events-none" />
-        <div className="absolute top-40 -left-20 w-72 h-72 rounded-full bg-purple-100 opacity-40 blur-3xl pointer-events-none" />
+        {/* <div className="absolute -top-16 -right-24 md:w-96 h-96 rounded-full bg-indigo-100 opacity-50 blur-3xl pointer-events-none" /> */}
+        {/* <div className="absolute top-40 -left-20 w-72 h-72 rounded-full bg-purple-100 opacity-40 blur-3xl pointer-events-none" /> */}
 
         <div className="max-w-6xl mx-auto px-4 mt-10 text-center relative">
           <div className="inline-flex items-center gap-2  border border-blue-400 rounded-full px-3 py-1 text-xs text-indigo-600 font-medium mb-6 shadow-sm">
@@ -20,7 +20,7 @@ function Hero() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-gray-900 leading-tight mb-4  mx-auto">
             <p>Transform Workforce</p>
             <p>Management with an Intelligent,</p>{" "}
-            <div className="flex w-full gap-2 items-center justify-center">
+            <div className="flex md:w-full gap-4 items-center justify-center">
               <Image
                 src="/AILogo.svg"
                 alt="AI Logo"
@@ -28,7 +28,7 @@ function Hero() {
                 height={50}
                 className="h-auto w-auto"
               />{" "}
-              <p>Powered HR Platform</p>
+              <p className="text-start md:text-center md:w-max w-min">Powered HR Platform</p>
             </div>
           </h1>
 
@@ -46,7 +46,7 @@ function Hero() {
             </a>
             <a
               href="#"
-              className="flex items-center justify-center border  z-30 border-gray-200 px-6 rounded-lg  font-medium text-white bg-black"
+              className="flex items-center justify-center border py-2 md:py-0 z-30 border-gray-200 px-6 rounded-lg  font-medium text-white bg-black"
             >
               Sign up for free
             </a>
